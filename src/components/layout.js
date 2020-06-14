@@ -13,7 +13,7 @@ import { useStaticQuery, graphql, Link } from "gatsby"
 
 import Header from "./header"
 import Footer from "./footer"
-import "../stylesheets/layout.scss"
+import "../stylesheets/global.scss"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -32,11 +32,11 @@ const Layout = ({ children }) => {
         <Link to="/"></Link>
       </Header>
       <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
+      // style={{
+      //   margin: `0 auto`,
+      //   maxWidth: 1200,
+      //   padding: `0 1.0875rem 1.45rem`,
+      // }}
       >
         <main
           className="content"

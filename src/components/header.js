@@ -7,7 +7,7 @@ import "../stylesheets/header.scss"
 const Header = ({ siteTitle }) => (
   <header>
     <div id="header">
-      <h1 style={{ margin: 0 }}>
+      <h1>
         <Link id="logo">{siteTitle}</Link>
       </h1>
     </div>

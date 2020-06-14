@@ -1,9 +1,15 @@
 @import "../stylesheets/global.scss";
 
 .footer {
-  p {
-    font-family: Roboto;
-  }
+  font-family: Roboto;
   text-align: center;
-  color: $dark;
+  color: $bgPrimary;
+  background-color: $dark;
+  font-style: italic;
+  height: 5vh;
+
+  p {
+    margin: 0;
+    padding: 0.9rem;
+  }
 }

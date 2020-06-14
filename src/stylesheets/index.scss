@@ -1,0 +1,32 @@
+@import "../stylesheets/global.scss";
+
+.menuList {
+  padding-top: 25vh;
+  font-family: Roboto;
+  text-align: center;
+
+  p {
+    margin-block-start: 1em !important;
+    margin: 0px;
+    text-align: center;
+  }
+}
+
+.mainImg {
+  height: 100px !important;
+  margin-bottom: 0px !important;
+}
+
+.mainLink {
+  background-color: $dark;
+  padding: 0rem 1.2rem;
+  color: $bgSecondary;
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: 0.1s;
+
+  &:hover {
+    font-size: 1.7rem;
+    font-weight: bold;
+  }
+}

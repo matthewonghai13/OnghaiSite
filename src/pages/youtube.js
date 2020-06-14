@@ -4,13 +4,13 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import "../stylesheets/releases.scss"
+import "../stylesheets/youtube.scss"
 
-const Releases = () => (
+const Youtube = () => (
   <Layout>
-    <SEO title="Releases" />
-    <div className="releases"></div>
+    <SEO title="Youtube" />
+    <div className="youtube"></div>
   </Layout>
 )
 
-export default Releases
+export default Youtube
