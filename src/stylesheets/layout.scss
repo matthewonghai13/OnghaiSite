@@ -1,3 +1,5 @@
+@import "./global.scss";
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -5,6 +7,7 @@ html {
 }
 body {
   margin: 0;
+  background-color: $bgPrimary;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
