@@ -1,0 +1,10 @@
+@import "../stylesheets/global.scss";
+
+.errorPage {
+  margin-top: 30vh;
+  p {
+    font-family: Roboto;
+  }
+  text-align: center;
+  color: $dark;
+}

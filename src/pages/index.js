@@ -1,15 +1,33 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
+import Img from "gatsby-image"
 
-const IndexPage = () => (
+const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
-    <p>hello</p>
+    <p>
+      <Img
+        fluid={data.mattFlowerDoor.childImageSharp.fluid}
+        alt="matthew onghai"
+      />
+    </p>
   </Layout>
 )
 
 export default IndexPage
+
+export const query = graphql`
+  query {
+    mattFlowerDoor: file(relativePath: { eq: "mattflowerdoor.jpeg" }) {
+      id
+      childImageSharp {
+        fluid(maxWidth: 3000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`

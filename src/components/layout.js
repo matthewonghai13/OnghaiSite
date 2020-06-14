@@ -2,6 +2,8 @@
  * Layout component that queries for data
  * with Gatsby's useStaticQuery component
  *
+ * Wraps page files (such as index.js)
+ *
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
@@ -10,6 +12,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql, Link } from "gatsby"
 
 import Header from "./header"
+import Footer from "./footer"
 import "../stylesheets/layout.scss"
 
 const Layout = ({ children }) => {
@@ -26,7 +29,7 @@ const Layout = ({ children }) => {
   return (
     <div>
       <Header siteTitle={data.site.siteMetadata.title}>
-        <Link to="/">My Portfolio</Link>
+        <Link to="/"></Link>
       </Header>
       <div
         style={{
@@ -35,12 +38,15 @@ const Layout = ({ children }) => {
           padding: `0 1.0875rem 1.45rem`,
         }}
       >
-        <main className="content">{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
+        <main
+          className="content"
+          style={{
+            minHeight: `calc(100vh - 150px)`,
+          }}
+        >
+          {children}
+        </main>
+        <Footer>{new Date().getFullYear()}</Footer>
       </div>
     </div>
   )
