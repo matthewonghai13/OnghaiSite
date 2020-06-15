@@ -2,7 +2,10 @@ $bgPrimary: rgb(249, 248, 244);
 $bgSecondary: rgb(218, 196, 136);
 $dark: rgb(33, 37, 41);
 
+html {
+  background-color: $dark;
+}
+
 body {
   margin: 0px;
-  background-color: $bgPrimary;
 }
