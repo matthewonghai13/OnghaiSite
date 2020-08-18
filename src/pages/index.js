@@ -3,7 +3,7 @@ import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Img from "gatsby-image"
+// import Img from "gatsby-image"
 import BackgroundImage from "gatsby-background-image"
 
 import "../stylesheets/index.scss"
@@ -24,29 +24,22 @@ const IndexPage = ({ data }) => {
       >
         <div className="menuList">
           <p>
-            <Link className="mainLink" to="/about">
-              about me
-            </Link>
-          </p>
-          <p className="lead">
-            <Link className="mainLink" to="/about">
-              art & design
-            </Link>
-          </p>
-          <p className="lead">
-            <Link className="mainLink" to="/programming">
-              programming
-            </Link>
-          </p>
-          <p className="lead">
-            <a className="mainLink" href="http://github.com/matthewonghai13">
-              github
+            <a
+              className="mainLink"
+              href="https://www.youtube.com/channel/UCN5Tihsmico6thmBmKkiMIA?view_as=subscriber"
+            >
+              youtube
             </a>
           </p>
-          <p className="lead">
-            <a className="mainLink" href="http://linkedin.com/in/matthewonghai">
-              linkedin
-            </a>
+          <p>
+            <Link className="mainLink" to="/music">
+              spotify
+            </Link>
+          </p>
+          <p>
+            <Link className="mainLink" to="/music">
+              soundcloud
+            </Link>
           </p>
         </div>
       </BackgroundImage>
