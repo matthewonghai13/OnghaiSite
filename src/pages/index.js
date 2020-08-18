@@ -24,10 +24,7 @@ const IndexPage = ({ data }) => {
       >
         <div className="menuList">
           <p>
-            <a
-              className="mainLink"
-              href="https://www.youtube.com/channel/UCN5Tihsmico6thmBmKkiMIA?view_as=subscriber"
-            >
+            <a className="mainLink" href="https://foxly.in/DEBh">
               youtube
             </a>
           </p>
