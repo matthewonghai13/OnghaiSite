@@ -23,8 +23,13 @@ const IndexPage = ({ data }) => {
         backgroundColor={`#040e18`}
       >
         <div className="menuList">
-          <p>
+          {/* <p>
             <a className="mainLink" href="https://foxly.in/DEBh">
+              youtube
+            </a>
+          </p> */}
+          <p>
+            <a className="mainLink" href="youtube://1rKa7l_iASI">
               youtube
             </a>
           </p>
